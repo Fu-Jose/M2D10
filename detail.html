@@ -289,18 +289,19 @@
           //   console.log(response);
           let data = await response.json();
           console.log(data);
+          console.log(url+1)
           document.getElementById("loading").classList.toggle("d-none");
           data.forEach((event) => {
                 switch (event){
                     case 1:
-                        let response = await fetch(url+1, {
-                        headers: {
-                        Authorization:
-                        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyMTAwMTg5YzI2ZjAwMTU3ZjljNTciLCJpYXQiOjE2MTU5OTA3ODYsImV4cCI6MTYxNzIwMDM4Nn0.iB1IT2zQKjETNfmxqErhNAC4So3s_iiDL6-WenmxgiA",
-                        },
-                        });
-                        let data = await response
-                        break;
+                        // let response = await fetch(url+1, {
+                        // headers: {
+                        // Authorization:
+                        // "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyMTAwMTg5YzI2ZjAwMTU3ZjljNTciLCJpYXQiOjE2MTU5OTA3ODYsImV4cCI6MTYxNzIwMDM4Nn0.iB1IT2zQKjETNfmxqErhNAC4So3s_iiDL6-WenmxgiA",
+                        // },
+                        // });
+                        // let data = await response
+                        // break;
                     case 2: 
                         break;
                     case 3: 
